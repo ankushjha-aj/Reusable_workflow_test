@@ -1,14 +1,14 @@
 name: My starter workflow 2
 
 on: 
-  workflow_dispatch:
+  push:
 
 jobs:
 
-   # call-workflow-using-release:
-   #   uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@v1
+   call-workflow-using-release:
+     uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@v1
 
-   call-workflow-using-branch:
-     uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@main
+   # call-workflow-using-branch:
+   #   uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@main
     
    
