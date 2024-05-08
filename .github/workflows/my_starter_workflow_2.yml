@@ -6,7 +6,7 @@ on:
 jobs:
 
    call-workflow-using-release:
-     uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@V2
+     uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@release-test
 
    # call-workflow-using-branch:
    #   uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@main
