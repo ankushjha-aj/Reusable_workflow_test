@@ -10,5 +10,7 @@ jobs:
 
    call-workflow-using-branch:
      uses: ankushjha-aj/html-test/.github/workflows/docker_push.yml@main
+     permissions:
+      packages: write 
     
    
