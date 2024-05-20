@@ -7,8 +7,8 @@ jobs:
   call_docker_push:
     uses: ankushjha-aj/html-test/.github/workflows/docker_push.yml@main
     permissions:
-      packages: read, write      # You still need read access for GitHub Packages if used
-      contents: read       # Allow reading repository contents
+      packages: write    
+      contents: write    
       id-token: write  
     
    
