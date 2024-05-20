@@ -4,13 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-
-   # call-workflow-using-release:
-   #   uses: ankushjha-aj/html-test/.github/workflows/reusable_workflow_2.yml@release-test
-
-   call-workflow-using-branch:
-     uses: ankushjha-aj/html-test/.github/workflows/docker_push.yml@main
-     permissions:
-      packages: write 
+  call_docker_push:
+    uses: ankushjha-aj/html-test/.github/workflows/docker_push.yml@main
+    permissions:
+      packages: read       # You still need read access for GitHub Packages if used
+      contents: read       # Allow reading repository contents
+      id-token: write  
     
    
